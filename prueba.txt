@@ -1,0 +1,267 @@
+/* ===== RESET ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== CONTENEDOR ===== */
+.container{
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ===== MENU ===== */
+.menu{
+    width: 250px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.menu a:hover{
+    background-color: blue;
+}
+
+/* BOTÓN */
+button{
+    color: white;
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center; 
+    background-color: black;
+    height: 40px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:blue;
+    color:black;
+    transition: 0.5s;  
+}
+
+/* ===== CONTENIDO ===== */
+.contenido{
+    flex: 1;
+    padding: 20px;
+}
+
+/* ===== VIDEO FONDO ===== */
+#video-intro{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.objetivo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+
+/* ===== TITULO ===== */
+.titulo{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.img-titulo{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* ===== BARRA ===== */
+.barra{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+/* ===== PERSONAJES ===== */
+.personajes{
+    display: flex;
+    flex-wrap: wrap; /* 🔥 CLAVE */
+    justify-content: center;
+    gap: 20px;
+}
+
+/* ===== TARJETAS ===== */
+.personaje1,
+.personaje2,
+.personaje3,
+.personaje4,
+.personaje5{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 200px;
+    min-height: 300px;
+    border-radius: 20px;
+    margin-top: 50px;
+    box-shadow:5px 5px 10px black;
+}
+
+/* COLORES */
+.personaje1{background: darkred;}
+.personaje2{background: darkgreen;}
+.personaje3{background: darkorange;}
+.personaje4{background: darkgoldenrod;}
+.personaje5{background: purple;}
+
+/* ===== IMÁGENES ===== */
+.imagenes1,
+.imagenes2,
+.imagenes3,
+.imagenes4,
+.imagenes5{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* IMÁGENES BASE */
+.imagenes1{background-image:url("img/mario.png");}
+.imagenes2{background-image:url("img/link.png");}
+.imagenes3{background-image:url("img/samus.png");}
+.imagenes4{background-image:url("img/pikachu.png");}
+.imagenes5{background-image:url("img/zelda.png");}
+
+/* ===== OPCIONES ===== */
+.opcion,
+.opcion2,
+.opcion3,
+.opcion4,
+.opcion5{
+    text-align: center;
+}
+
+/* BOTONES INTERNOS */
+span{
+    width: 120px;
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    margin: 5px auto;
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* HOVER LINKS */
+a:hover{
+    background-color:blue;
+    color:black;
+    transition: 0.5s;
+}
+
+/* ===== EFECTOS PERSONAJES ===== */
+.personaje1:has(.flor:hover) .imagenes1{background-image:url("img/mario2.png");}
+.personaje1:has(.estrella:hover) .imagenes1{background-image:url("img/mario3.png");}
+
+.personaje2:has(.tiro:hover) .imagenes2{background-image:url("img/link2.png");}
+.personaje2:has(.corte:hover) .imagenes2{background-image:url("img/link3.png");}
+
+.personaje3:has(.cañon:hover) .imagenes3{background-image:url("img/samus2.png");}
+.personaje3:has(.espacial:hover) .imagenes3{background-image:url("img/samus3.png");}
+
+.personaje4:has(.trueno:hover) .imagenes4{background-image:url("img/pikachu3.png");}
+.personaje4:has(.rayo:hover) .imagenes4{background-image:url("img/pikachu2.png");}
+
+.personaje5:has(.fuego-din:hover) .imagenes5{background-image:url("img/zelda2.png");}
+.personaje5:has(.viento-farore:hover) .imagenes5{background-image:url("img/zelda3.png");}
+
+/* ===== FOOTER ===== */
+#finish{
+    color: white;
+}
+
+/* ===== CARRUSEL ===== */
+.carril{
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.inter{
+    display: flex;
+    width: 300%;
+    animation: slide 35s linear infinite;
+}
+
+.inter img{
+    width: 33.33%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ANIMACIÓN */
+@keyframes slide{
+    0%{transform:translateX(0);}
+    33%{transform:translateX(-100%);}
+    66%{transform:translateX(-213.7%);}
+    100%{transform:translateX(0);}
+}
+
+/* ===== RESPONSIVE 🔥 ===== */
+@media (max-width: 768px){
+
+    .container{
+        flex-direction: column;
+    }
+
+    .menu{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .personaje1,
+    .personaje2,
+    .personaje3,
+    .personaje4,
+    .personaje5{
+        max-width: 90%;
+    }
+
+}
+

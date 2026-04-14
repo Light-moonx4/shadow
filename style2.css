@@ -1,0 +1,571 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    height: auto;
+}
+
+.menu{
+    width: 250px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    height: auto;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.menu a:hover{
+    background-color: blue;
+}
+.menu img{
+    display: flex;
+    margin-top: auto;
+}
+button{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center; 
+    background-color: black;
+    height: 40px;
+
+}
+button:hover{
+    background-color:blue;
+    color:black;
+    transition: 0.5s;  
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: auto;
+}
+.img-titulo{
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 10px white);
+    
+}
+.contenido{
+    flex: 1;
+    padding: 20px;
+}
+#video-intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+
+}
+.objetivo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgb(0,0,0,0.8);
+}
+
+.barra{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    margin-top: -20px;
+}
+.personaje1{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 300px;
+    background-color:darkred;
+    border-radius: 20px;
+    margin-top: 100px;
+    box-shadow:5px 5px 10px black;
+    float: left;
+    margin-left: 50px;
+}
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    
+}
+h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.poder{
+    width: 120px;
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    float: left;
+    background-color: white;
+    color: darkred;
+    justify-content: center;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+.personaje1 a {
+    text-decoration: none;
+    color: darkred;
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+a:hover{
+    background-color:blue;
+    color:black;
+    transition: 0.5s;
+}
+.flor{
+    width: 120px;
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    float: left;
+    background-color: white;
+    color: darkred;
+    justify-content: center;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+.estrella{
+    width: 120px;
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    float: left;
+    background-color: white;
+    color: darkred;
+    justify-content: center;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.imagenes1{
+    width: 100px;
+    height: 100px;
+    background-image: url("img/mario.png");
+    border-radius: 20px;
+    margin-bottom: 10px;    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.opcion{
+    margin-left: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.personaje1:has(.flor:hover) .imagenes1{
+    background-image: url("img/mario2.png");
+}
+
+.personaje1:has(.estrella:hover) .imagenes1{
+    background-image: url("img/mario3.png");
+}
+.personaje2{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 300px;
+    background-color: darkgreen;
+    border-radius: 20px;
+    margin-top: 100px;
+    box-shadow:5px 5px 10px black;
+    float: left;
+    margin-left: 50px;
+
+}
+.personaje2 a {
+    text-decoration: none;
+    color: darkgreen;
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.tiro{
+    width: 120px;
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    float: left;
+    background-color: white;
+    color: darkgreen;
+    justify-content: center;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+.corte{
+    width: 120px;
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    float: left;
+    background-color: white;
+    color: darkgreen;
+    justify-content: center;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+.poder2{
+    width: 120px;
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    float: left;
+    background-color: white;
+    color: darkgreen;
+    justify-content: center;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.imagenes2{
+    width: 100px;
+    height: 100px;
+    background-image: url("img/link.png");
+    border-radius: 20px;
+    margin-bottom: 10px;    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.opcion2{
+    margin-left: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.personaje2:has(.tiro:hover) .imagenes2{
+    background-image: url("img/link2.png");
+}
+
+.personaje2:has(.corte:hover) .imagenes2{
+    background-image: url("img/link3.png");
+}
+.personaje3{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 300px;
+    background-color: darkorange;
+    border-radius: 20px;
+    margin-top: 100px;
+    box-shadow:5px 5px 10px black;
+    float: left;
+    margin-left: 50px;
+
+}
+.personaje3 a {
+    text-decoration: none;
+    color: darkorange;
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.cañon{
+    width: 120px;
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    float: left;
+    background-color: white;
+    color: darkorange;
+    justify-content: center;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+.espacial{
+    width: 120px;
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    float: left;
+    background-color: white;
+    color: darkorange;
+    justify-content: center;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+.poder3{
+    width: 120px;
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    float: left;
+    background-color: white;
+    color: darkorange;
+    justify-content: center;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.imagenes3{
+    width: 100px;
+    height: 100px;
+    background-image: url("img/samus.png");
+    border-radius: 20px;
+    margin-bottom: 10px;    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.opcion3{
+    margin-left: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.personaje3:has(.cañon:hover) .imagenes3{
+    background-image: url("img/samus2.png");
+}
+
+.personaje3:has(.espacial:hover) .imagenes3{
+    background-image: url("img/samus3.png");
+}
+.personaje4{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 300px;
+    background-color: darkgoldenrod;
+    border-radius: 20px;
+    margin-top: 100px;
+    box-shadow:5px 5px 10px black;
+    float: left;
+    margin-left: 50px;
+}
+.personaje4 a {
+    text-decoration: none;
+    color: darkgoldenrod;
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.trueno{
+    width: 120px;
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    float: left;
+    background-color: white;
+    color: darkgoldenrod;
+    justify-content: center;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+.rayo{
+    width: 120px;
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    float: left;
+    background-color: white;
+    color: darkgoldenrod;
+    justify-content: center;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+.poder4{
+    width: 120px;
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    float: left;
+    background-color: white;
+    color: darkgoldenrod;
+    justify-content: center;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.imagenes4{
+    width: 100px;
+    height: 100px;
+    background-image: url("img/pikachu.png");
+    border-radius: 20px;
+    margin-bottom: 10px;    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.opcion4{
+    margin-left: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.personaje4:has(.trueno:hover) .imagenes4{
+    background-image: url("img/pikachu3.png");
+}
+
+.personaje4:has(.rayo:hover) .imagenes4{
+    background-image: url("img/pikachu2.png");
+}
+.personaje5{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 300px;
+    background-color: purple;
+    border-radius: 20px;
+    margin-top: 100px;
+    box-shadow:5px 5px 10px black;
+    float: left;
+    margin-left: 50px;
+
+}
+.personaje5 a {
+    text-decoration: none;
+    color: purple;
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.fuego-din{
+    width: 120px;
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    float: left;
+    background-color: white;
+    color: purple;
+    justify-content: center;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+.viento-farore{
+    width: 120px;
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    float: left;
+    background-color: white;
+    color: purple;
+    justify-content: center;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+.poder5{
+    width: 120px;
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    float: left;
+    background-color: white;
+    color: purple;
+    justify-content: center;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.imagenes5{
+    width: 100px;
+    height: 100px;
+    background-image: url("img/zelda.png");
+    border-radius: 20px;
+    margin-bottom: 10px;    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.opcion5{
+    margin-left: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.personaje5:has(.fuego-din:hover) .imagenes5{
+    background-image: url("img/zelda2.png");
+}
+
+.personaje5:has(.viento-farore:hover) .imagenes5{
+    background-image: url("img/zelda3.png");
+}
+.personajes{
+    justify-content: center;
+    display: flex;
+}
+#finish{
+    color: white;
+}
+.carril{
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    height: 250px;
+    margin-top: 80px;
+    overflow: hidden;
+    background-color: transparent;
+}
+.inter{
+    display: flex;
+    width: 300%;
+    animation: slide 35s linear infinite;
+}
+.inter img{
+    width: 33.33%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+}
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-213.7%); }
+    100% { transform: translateX(0); }
+
+}
+
